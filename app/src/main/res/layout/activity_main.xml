@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/openTransparentScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Open Transparent Activity!"
+        app:layout_constraintBottom_toTopOf="@+id/openNextActivityOldWay"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <Button
+        android:id="@+id/openNextActivityOldWay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Result activity Old!"
+        app:layout_constraintBottom_toTopOf="@+id/select_color_new_way"
+        app:layout_constraintTop_toBottomOf="@+id/openTransparentScreen"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <Button
+        android:id="@+id/select_color_new_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Open Result activity New!"
+        app:layout_constraintBottom_toTopOf="@+id/open_fragment_sample"
+        app:layout_constraintTop_toBottomOf="@+id/openNextActivityOldWay"
+        tools:layout_editor_absoluteX="78dp" />
+
+    <Button
+        android:id="@+id/open_fragment_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Open Fragment sample"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_color_new_way"
+        tools:layout_editor_absoluteX="91dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
